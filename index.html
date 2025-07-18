@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    nav {
+      background-color: #343a40;
+      padding: 15px;
+      color: white;
+      text-align: center;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .tableauPlaceholder {
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Job Market Analysis Dashboard</h1>
+  </nav>
+
+  <section>
+    <h2>📊 Dashboard 1: Job Opportunities Overview</h2>
+    <div class='tableauPlaceholder' id='viz1' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Dashboard 1' src='https://public.tableau.com/static/images/HF/HFD7S8M5H/1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='path' value='shared/HFD7S8M5H' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/HF/HFD7S8M5H/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+  </section>
+
+  <section>
+    <h2>📈 Dashboard 2: Salary & Company Insights</h2>
+    <div class='tableauPlaceholder' id='viz2' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Dashboard 2' src='https://public.tableau.com/static/images/HF/HFD7S8M5H/2_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='path' value='shared/HFD7S8M5H' /> <!-- Replace if you have a second dashboard ID -->
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/HF/HFD7S8M5H/2.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Job Dashboard by Rahul Rai</p>
+  </footer>
+
+  <script type='text/javascript'>
+    function loadTableauViz(id) {
+      var divElement = document.getElementById(id);
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '2000px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    }
+
+    loadTableauViz('viz1');
+    loadTableauViz('viz2');
+  </script>
+
+</body>
+</html>
